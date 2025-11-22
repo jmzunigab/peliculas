@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  background-color: #000000;
+  background-image: url("images/fondo.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.encabezado {
+  background-color: #353131;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+.encabezado .contenedor-encabezado {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.encabezado .titulo-pagina {
+  font-size: 24px;
+  margin: 0;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.formulario-busqueda {
+  display: flex;
+  align-items: center;
+}
+.formulario-busqueda #busqueda {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+.formulario-busqueda .button-buscar {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 0px 5px 5px 0;
+  background-color: #4CAF50;
+  color: #fff;
+}
+.formulario-busqueda .button-buscar:hover {
+  background-color: rgb(60.5577689243, 139.4422310757, 63.7450199203);
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #353131;
+  line-height: 2.6;
+}
+
+.sin-espacio {
+  line-height: 1.5;
+}
+
+.imagen-pelicula {
+  grid-column: 1/5;
+  grid-row: 1;
+}
+
+.imagen-pelicula img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.info-pelicula {
+  grid-column: 6/13;
+  grid-row: 1;
+}
+
+.info-pelicula h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.detalles {
+  margin-top: 20px;
+}
+
+.detalles p {
+  margin-bottom: 5px;
+}
+
+.detalles span {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .contenedor {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .imagen-pelicula {
+    grid-column: 1/7;
+    grid-row: 1;
+  }
+  .info-pelicula {
+    grid-column: 1/7;
+    grid-row: 2;
+  }
+}
+@media (max-width: 480px) {
+  .contenedor {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .imagen-pelicula {
+    grid-column: 1/5;
+    grid-row: 1;
+  }
+  .info-pelicula {
+    grid-column: 1/5;
+    grid-row: 2;
+  }
+}
+.contenedor-comentarios {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #353131;
+  line-height: 2;
+}
+
+.formulario-comentarios {
+  margin-bottom: 20px;
+}
+
+#comentario {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+
+.button-enviar {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.titulo-pelicula {
+  color: #08e60f;
+}
+
+/*# sourceMappingURL=estilo-peliculas.css.map */

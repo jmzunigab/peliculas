@@ -1,0 +1,60 @@
+
+
+/* General */
+body {
+  background-color: rgb(22, 17, 70);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Portada */
+header {
+  /*background-image: linear-gradient(45deg, #111, #444);*/
+  background-image: linear-gradient(45deg, #0e0365, #070e46);
+  background-size: cover;
+  color: white;
+}
+
+
+/* Tarjetas de películas */
+.movie-card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.movie-card:hover {
+  transition: box-shadow 0.4s ease;   
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+/* Botones */
+.btn-primary {
+  background-color: #f50b0b;
+  /*background-color: #ff5733;*/
+
+  border: none;
+}
+
+
+.btn-primary:hover {
+  background-color: #f50b0b;
+}
+
+/* Footer */
+footer {
+  background-color: #150a68;
+  /*background-color: #222;*/
+  /*color: #ccc;*/
+  color: #1a0b6e;
+}
+
+/* Responsivo: centrado del texto en móvil */
+@media (max-width: 576px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  .navbar-brand {
+    font-size: 1rem;
+  }
+}
